@@ -6,23 +6,12 @@ import com.example.domain.Person
 
 log.info "save person"
 
-if(!params.name){
-    return
-}
-
-if(!params.email){
-    return
-}
-
-if(!params.tagline){
-    return
-}
-
 response.contentType = 'application/json'
 
 def person = new Person(name: params.name, email: params.email, tagline: params.tagline)
-person.save()
+if(person.save()){
+    json(person: person)
+}
 
-json(person: person)
 
 
