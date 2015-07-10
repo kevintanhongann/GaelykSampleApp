@@ -1,3 +1,5 @@
+def cacheTime = localMode ? 0 : 1.hour
+
 
 get "/", forward: "/WEB-INF/pages/index.gtpl"
 get "/datetime", forward: "/datetime.groovy"

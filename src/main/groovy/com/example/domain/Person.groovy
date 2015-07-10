@@ -8,7 +8,7 @@ import groovyx.gaelyk.datastore.Unindexed
  * Created by kevintanhongann on 7/9/15.
  */
 @ToString
-@Entity(unindexed = true)
+@Entity(unindexed = false)
 class Person {
 
     String name

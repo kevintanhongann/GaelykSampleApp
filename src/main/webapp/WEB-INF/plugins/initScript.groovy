@@ -1,6 +1,6 @@
 import com.example.domain.Person
 
-binding{
+binding {
 
 
 
